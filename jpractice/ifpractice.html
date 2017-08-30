@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>If Practice Page, Practicing If Statements</title>
+    <script type="text/javascript">
+
+    function check() {
+      var numVal = document.getElementById('box').value;
+
+      if (numVal >= 70) {
+document.getElementById('show').innerHTML = ('You Passed')
+
+      } else
+    {
+document.getElementById('show').innerHTML = ('You did not pass')
+      }
+    }
+
+    </script>
+  </head>
+  <body>
+
+    <h2>Checking test scores</h2>
+
+<input type="text" id="box" placeholder="enter test score">
+<p id="show"> shows test score</p>
+
+<button type="button" name="button" onclick="check()">Big Button</button>
+
+
+  </body>
+</html>

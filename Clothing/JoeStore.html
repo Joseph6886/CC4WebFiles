@@ -3,17 +3,20 @@
   <head>
     <meta charset="utf-8">
     <title>JoeStore Page</title>
+
 <style media="screen">
 .money{
 
   color: green;}
 
   body{
-
+align-content: center;
+  background-color: gray;
     font-family: Ariel, verdana, san-serif;
 
   }
   table{
+background-image: url("pix/pizza.jpg");
     width: 600px;
     text-align: center;
   }
@@ -30,7 +33,7 @@ th{
   font-size: 90%;
   border-bottom: 2px solid #111111;
   border-top: 1px solid #999;
-  text-align: left;
+  text-align: center;
 }
 
 tr.even{
@@ -45,18 +48,28 @@ tr.hover{
   text-align: right;
 }
 .orange{
-  text-align: center;
-}
+  text-align: center;}
+
 .brown{
   text-align: center;
 }
 .white{
-  text-align: center;
+  margin: auto;
+
 }
 .dawg{
   text-align: center;
 }
-
+img {
+    border-radius: 50%;
+}
+#grad {
+    background: red; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(red, yellow); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(red, yellow); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(red, yellow); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(red, yellow); /* Standard syntax */
+}
 
 
 </style>
@@ -75,8 +88,18 @@ tr.hover{
 
 <h2 class= dawg>Clearance items are listed below!!!</h2>
 
+<p id="grad">
+Working on Monday morning <br>
+We love the Browns!
+</p>
+
+
+
+
+<div class="white">
 <table>
-  <tr class= white>
+
+  <tr>
     <th>Item Name</th>
     <th>Item Type</th>
     <th class="money">Original Price</th>
@@ -114,6 +137,9 @@ tr.hover{
 
 
 </table>
+
+
+</div>
 
 <ul>
   <li><a href="pants html">pants page</a></li>

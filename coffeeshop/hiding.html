@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title> Hiding Page</title>
+  </head>
+  <body>
+<script src= ../coffeeshop/javascript/jquery-3.2.1.min.js>
+
+</script>
+
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+        $("p").hide(1000);
+    });
+});
+</script>
+
+
+</head>
+<body>
+
+
+<h1>JQuery Magic</h1>
+<h2>Hocus Pocus</h2>
+<h3>Nothing up my sleeve</h3>
+<p>Now if you will click the <b>Disappear</b> button below, you will see that all of this text disappears.  ITS MAGIC!</p>
+
+<button>Disappear</button>
+
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+        $("#div1").fadeIn();
+        $("#div2").fadeIn("slow");
+        $("#div3").fadeIn(3000);
+    });
+});
+</script>
+
+<p>Demonstrate fadeIn() with different parameters.</p>
+
+<button>Watch 3 colored boxes slowly appear!</button><br><br>
+
+<div id="div1" style="width:80px;height:80px;display:none;background-color:red;"></div><br>
+<div id="div2" style="width:80px;height:80px;display:none;background-color:green;"></div><br>
+<div id="div3" style="width:80px;height:80px;display:none;background-color:blue;"></div
+
+  </body>
+</html>
